@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: piezobot_description
+    relative_path: urdf/piezobot.urdf.xacro
+  srdf:
+    relative_path: config/piezobot.srdf
+  package_settings:
+    author_name: NIls-Christian Iseke
+    author_email: nilsmailiseke@gmail.com
+    generated_timestamp: 1700571176
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

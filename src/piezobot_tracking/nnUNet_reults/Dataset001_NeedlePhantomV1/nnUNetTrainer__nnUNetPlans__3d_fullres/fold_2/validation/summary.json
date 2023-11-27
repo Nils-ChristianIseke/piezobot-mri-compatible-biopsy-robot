@@ -1,0 +1,514 @@
+{
+    "foreground_mean": {
+        "Dice": 0.6708371630138255,
+        "FN": 125.575,
+        "FP": 83.8,
+        "IoU": 0.6180931758871511,
+        "TN": 45656.95,
+        "TP": 2273.675,
+        "n_pred": 2357.475,
+        "n_ref": 2399.25
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.630493990836809,
+            "FN": 44.25,
+            "FP": 86.75,
+            "IoU": 0.5463567183002427,
+            "TN": 47652.5,
+            "TP": 356.5,
+            "n_pred": 443.25,
+            "n_ref": 400.75
+        },
+        "2": {
+            "Dice": 0.9305426471904419,
+            "FN": 65.625,
+            "FP": 44.125,
+            "IoU": 0.8710080077629263,
+            "TN": 47261.0,
+            "TP": 769.25,
+            "n_pred": 813.375,
+            "n_ref": 834.875
+        },
+        "3": {
+            "Dice": 0.9704911141223685,
+            "FN": 343.5,
+            "FP": 268.75,
+            "IoU": 0.9427675236997597,
+            "TN": 37603.625,
+            "TP": 9924.125,
+            "n_pred": 10192.875,
+            "n_ref": 10267.625
+        },
+        "4": {
+            "Dice": 0.19833068362480127,
+            "FN": 19.5,
+            "FP": 0.5,
+            "IoU": 0.14317602040816327,
+            "TN": 48116.75,
+            "TP": 3.25,
+            "n_pred": 3.75,
+            "n_ref": 22.75
+        },
+        "5": {
+            "Dice": 0.6243273792947064,
+            "FN": 155.0,
+            "FP": 18.875,
+            "IoU": 0.5871576092646636,
+            "TN": 47650.875,
+            "TP": 315.25,
+            "n_pred": 334.125,
+            "n_ref": 470.25
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8092105263157895,
+                    "FN": 152,
+                    "FP": 80,
+                    "IoU": 0.6795580110497238,
+                    "TN": 46316,
+                    "TP": 492,
+                    "n_pred": 572,
+                    "n_ref": 644
+                },
+                "2": {
+                    "Dice": 0.8842105263157894,
+                    "FN": 34,
+                    "FP": 54,
+                    "IoU": 0.7924528301886793,
+                    "TN": 46616,
+                    "TP": 336,
+                    "n_pred": 390,
+                    "n_ref": 370
+                },
+                "3": {
+                    "Dice": 0.973745665557993,
+                    "FN": 172,
+                    "FP": 199,
+                    "IoU": 0.9488346434974486,
+                    "TN": 39789,
+                    "TP": 6880,
+                    "n_pred": 7079,
+                    "n_ref": 7052
+                },
+                "4": {
+                    "Dice": 0.11764705882352941,
+                    "FN": 15,
+                    "FP": 0,
+                    "IoU": 0.0625,
+                    "TN": 47024,
+                    "TP": 1,
+                    "n_pred": 1,
+                    "n_ref": 16
+                },
+                "5": {
+                    "Dice": 0.9264029438822448,
+                    "FN": 60,
+                    "FP": 100,
+                    "IoU": 0.8628963153384748,
+                    "TN": 45873,
+                    "TP": 1007,
+                    "n_pred": 1107,
+                    "n_ref": 1067
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_001.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_001.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8893093661305582,
+                    "FN": 42,
+                    "FP": 75,
+                    "IoU": 0.8006814310051107,
+                    "TN": 43765,
+                    "TP": 470,
+                    "n_pred": 545,
+                    "n_ref": 512
+                },
+                "2": {
+                    "Dice": 0.9223826714801444,
+                    "FN": 61,
+                    "FP": 25,
+                    "IoU": 0.8559463986599665,
+                    "TN": 43755,
+                    "TP": 511,
+                    "n_pred": 536,
+                    "n_ref": 572
+                },
+                "3": {
+                    "Dice": 0.962289645006756,
+                    "FN": 549,
+                    "FP": 65,
+                    "IoU": 0.9273200757575758,
+                    "TN": 35904,
+                    "TP": 7834,
+                    "n_pred": 7899,
+                    "n_ref": 8383
+                },
+                "4": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 44352,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                },
+                "5": {
+                    "Dice": 0.0,
+                    "FN": 1060,
+                    "FP": 0,
+                    "IoU": 0.0,
+                    "TN": 43292,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 1060
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_015.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_015.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 2,
+                    "IoU": 0.0,
+                    "TN": 44350,
+                    "TP": 0,
+                    "n_pred": 2,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.9579288025889967,
+                    "FN": 41,
+                    "FP": 11,
+                    "IoU": 0.9192546583850931,
+                    "TN": 43708,
+                    "TP": 592,
+                    "n_pred": 603,
+                    "n_ref": 633
+                },
+                "3": {
+                    "Dice": 0.9814298347051221,
+                    "FN": 171,
+                    "FP": 102,
+                    "IoU": 0.9635367971149993,
+                    "TN": 36865,
+                    "TP": 7214,
+                    "n_pred": 7316,
+                    "n_ref": 7385
+                },
+                "4": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 44352,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                },
+                "5": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 44352,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_018.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_018.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8321579689703809,
+                    "FN": 39,
+                    "FP": 80,
+                    "IoU": 0.7125603864734299,
+                    "TN": 43938,
+                    "TP": 295,
+                    "n_pred": 375,
+                    "n_ref": 334
+                },
+                "2": {
+                    "Dice": 0.9148936170212766,
+                    "FN": 82,
+                    "FP": 78,
+                    "IoU": 0.8431372549019608,
+                    "TN": 43332,
+                    "TP": 860,
+                    "n_pred": 938,
+                    "n_ref": 942
+                },
+                "3": {
+                    "Dice": 0.9673925058030286,
+                    "FN": 262,
+                    "FP": 328,
+                    "IoU": 0.9368443588096768,
+                    "TN": 35010,
+                    "TP": 8752,
+                    "n_pred": 9080,
+                    "n_ref": 9014
+                },
+                "4": {
+                    "Dice": 0.0,
+                    "FN": 49,
+                    "FP": 0,
+                    "IoU": 0.0,
+                    "TN": 44303,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 49
+                },
+                "5": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 44352,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_019.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_019.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8765331152902698,
+                    "FN": 77,
+                    "FP": 74,
+                    "IoU": 0.7802037845705968,
+                    "TN": 36757,
+                    "TP": 536,
+                    "n_pred": 610,
+                    "n_ref": 613
+                },
+                "2": {
+                    "Dice": 0.929368029739777,
+                    "FN": 46,
+                    "FP": 49,
+                    "IoU": 0.8680555555555556,
+                    "TN": 36724,
+                    "TP": 625,
+                    "n_pred": 674,
+                    "n_ref": 671
+                },
+                "3": {
+                    "Dice": 0.9608782265926334,
+                    "FN": 563,
+                    "FP": 360,
+                    "IoU": 0.9247022352749225,
+                    "TN": 25186,
+                    "TP": 11335,
+                    "n_pred": 11695,
+                    "n_ref": 11898
+                },
+                "4": {
+                    "Dice": 0.6756756756756757,
+                    "FN": 20,
+                    "FP": 4,
+                    "IoU": 0.5102040816326531,
+                    "TN": 37395,
+                    "TP": 25,
+                    "n_pred": 29,
+                    "n_ref": 45
+                },
+                "5": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 37444,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_101.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_101.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.8905950095969289,
+                    "FN": 40,
+                    "FP": 131,
+                    "IoU": 0.8027681660899654,
+                    "TN": 54993,
+                    "TP": 696,
+                    "n_pred": 827,
+                    "n_ref": 736
+                },
+                "2": {
+                    "Dice": 0.9587525150905433,
+                    "FN": 30,
+                    "FP": 52,
+                    "IoU": 0.9207729468599034,
+                    "TN": 54825,
+                    "TP": 953,
+                    "n_pred": 1005,
+                    "n_ref": 983
+                },
+                "3": {
+                    "Dice": 0.9696514066394967,
+                    "FN": 261,
+                    "FP": 506,
+                    "IoU": 0.9410906298003072,
+                    "TN": 42840,
+                    "TP": 12253,
+                    "n_pred": 12759,
+                    "n_ref": 12514
+                },
+                "4": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 55860,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                },
+                "5": {
+                    "Dice": 0.9465791940018744,
+                    "FN": 120,
+                    "FP": 51,
+                    "IoU": 0.8985765124555161,
+                    "TN": 54174,
+                    "TP": 1515,
+                    "n_pred": 1566,
+                    "n_ref": 1635
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_115.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_115.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.0,
+                    "FN": 0,
+                    "FP": 9,
+                    "IoU": 0.0,
+                    "TN": 55851,
+                    "TP": 0,
+                    "n_pred": 9,
+                    "n_ref": 0
+                },
+                "2": {
+                    "Dice": 0.9510869565217391,
+                    "FN": 52,
+                    "FP": 38,
+                    "IoU": 0.9067357512953368,
+                    "TN": 54895,
+                    "TP": 875,
+                    "n_pred": 913,
+                    "n_ref": 927
+                },
+                "3": {
+                    "Dice": 0.9805608119731636,
+                    "FN": 270,
+                    "FP": 182,
+                    "IoU": 0.9618629767127911,
+                    "TN": 44008,
+                    "TP": 11400,
+                    "n_pred": 11582,
+                    "n_ref": 11670
+                },
+                "4": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 55860,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                },
+                "5": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 55860,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_118.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_118.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.7461459403905447,
+                    "FN": 4,
+                    "FP": 243,
+                    "IoU": 0.5950819672131148,
+                    "TN": 55250,
+                    "TP": 363,
+                    "n_pred": 606,
+                    "n_ref": 367
+                },
+                "2": {
+                    "Dice": 0.925718058765269,
+                    "FN": 179,
+                    "FP": 46,
+                    "IoU": 0.8617086662569146,
+                    "TN": 54233,
+                    "TP": 1402,
+                    "n_pred": 1448,
+                    "n_ref": 1581
+                },
+                "3": {
+                    "Dice": 0.9679808167007546,
+                    "FN": 500,
+                    "FP": 408,
+                    "IoU": 0.9379484726303561,
+                    "TN": 41227,
+                    "TP": 13725,
+                    "n_pred": 14133,
+                    "n_ref": 14225
+                },
+                "4": {
+                    "Dice": 0.0,
+                    "FN": 72,
+                    "FP": 0,
+                    "IoU": 0.0,
+                    "TN": 55788,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 72
+                },
+                "5": {
+                    "Dice": NaN,
+                    "FN": 0,
+                    "FP": 0,
+                    "IoU": NaN,
+                    "TN": 55860,
+                    "TP": 0,
+                    "n_pred": 0,
+                    "n_ref": 0
+                }
+            },
+            "prediction_file": "/workspace/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_2/validation/t2_haste_tra_2_2mm_119.nii.gz",
+            "reference_file": "/workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/gt_segmentations/t2_haste_tra_2_2mm_119.nii.gz"
+        }
+    ]
+}

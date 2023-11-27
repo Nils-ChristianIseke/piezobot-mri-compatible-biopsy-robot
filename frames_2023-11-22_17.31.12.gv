@@ -1,0 +1,15 @@
+digraph G {
+"base_link" -> "link1"[label=" Broadcaster: default_authority\nAverage rate: 17.984\nBuffer length: 5.06\nMost recent transform: 1700674272.793218\nOldest transform: 1700674267.73322\n"];
+"world" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"link1" -> "link2"[label=" Broadcaster: default_authority\nAverage rate: 17.984\nBuffer length: 5.06\nMost recent transform: 1700674272.793218\nOldest transform: 1700674267.73322\n"];
+"link2" -> "link3"[label=" Broadcaster: default_authority\nAverage rate: 17.984\nBuffer length: 5.06\nMost recent transform: 1700674272.793218\nOldest transform: 1700674267.73322\n"];
+"link3" -> "link4"[label=" Broadcaster: default_authority\nAverage rate: 17.984\nBuffer length: 5.06\nMost recent transform: 1700674272.793218\nOldest transform: 1700674267.73322\n"];
+"link4" -> "link5"[label=" Broadcaster: default_authority\nAverage rate: 17.984\nBuffer length: 5.06\nMost recent transform: 1700674272.793218\nOldest transform: 1700674267.73322\n"];
+"link5" -> "link6"[label=" Broadcaster: default_authority\nAverage rate: 17.984\nBuffer length: 5.06\nMost recent transform: 1700674272.793218\nOldest transform: 1700674267.73322\n"];
+"base_link" -> "mri_origin"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"mri_origin" -> "needle_holder"[label=" Broadcaster: default_authority\nAverage rate: 1.255\nBuffer length: 3.985\nMost recent transform: 1700674272.210021\nOldest transform: 1700674268.225417\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1700674272.8124852"[ shape=plaintext ] ;
+}->"world";
+}

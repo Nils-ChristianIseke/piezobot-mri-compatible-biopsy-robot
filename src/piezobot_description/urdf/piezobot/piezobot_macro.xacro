@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <xacro:include filename="$(find piezobot_description)/urdf/common.xacro" />
+
+  <xacro:macro name="piezobot" params="prefix parent *origin">
+    <!-- LINKS -->
+    <!-- base link -->
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.466086410238613 0.128601280657146 1.52598063551311E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.29503765484135" />
+      <inertia
+        ixx="0.050296768645492"
+        ixy="-0.00212949050438142"
+        ixz="-1.0561632028986E-06"
+        iyy="0.0429205675878005"
+        iyz="3.05758301837118E-06"
+        izz="0.0110579088448838" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="${prefix}link1">
+    <inertial>
+      <origin
+        xyz="0.0383281520983859 -0.000997939340236759 0.0299999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.0444765824614467" />
+      <inertia
+        ixx="1.13600808097973E-05"
+        ixy="-4.02900087041683E-07"
+        ixz="-2.1800785952902E-07"
+        iyy="1.13600808097974E-05"
+        iyz="-2.18007859529017E-07"
+        izz="1.78116182775241E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link
+    name="${prefix}link2">
+    <inertial>
+      <origin
+        xyz="0.074337310250134 -0.00896882548978644 0.000725036338370094"
+        rpy="0 0 0" />
+      <mass
+        value="0.0705862577599623" />
+      <inertia
+        ixx="1.68829829593606E-05"
+        ixy="7.65118490205231E-07"
+        ixz="4.00746798090171E-07"
+        iyy="0.000123193806240612"
+        iyz="8.495430850149E-07"
+        izz="0.000120938546858163" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+ <link
+    name="${prefix}link3">
+    <inertial>
+      <origin
+        xyz="0.0773857541891932 -0.000954122631570069 2.07066308019477E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.0548025952498245" />
+      <inertia
+        ixx="6.24220412729047E-06"
+        ixy="-7.6296515598419E-07"
+        ixz="-2.83404710187672E-10"
+        iyy="2.07415544139928E-05"
+        iyz="-4.87659144462771E-11"
+        izz="2.04580259705171E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+ 
+  <link
+    name="${prefix}link4">
+    <inertial>
+      <origin
+        xyz="0.0127235820815352 -0.000193353675692272 1.46443792120587E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.00527923380119844" />
+      <inertia
+        ixx="1.78136169808871E-07"
+        ixy="4.51532577823857E-09"
+        ixz="8.80923494586544E-12"
+        iyy="5.03389465905407E-07"
+        iyz="-4.04775165869029E-13"
+        izz="4.45693899182304E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.87843137254902 0.874509803921569 0.858823529411765 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+ 
+ <link
+    name="${prefix}link5">
+    <inertial>
+      <origin
+        xyz="-0.00657447404539973 -4.02857360942699E-08 3.5108632380227E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.00320265290491734" />
+      <inertia
+        ixx="1.53212724305889E-07"
+        ixy="-2.90976279899424E-14"
+        ixz="2.5358306292767E-14"
+        iyy="2.29521683409466E-07"
+        iyz="4.1964692286221E-12"
+        izz="2.29525317344298E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+ 
+  <link
+    name="${prefix}link6">
+    <inertial>
+      <origin
+        xyz="-0.0246544117646466 -1.94289029309402E-16 -4.74880551548651E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.000144199102799771" />
+      <inertia
+        ixx="5.77135703205669E-11"
+        ixy="-9.16213244820369E-24"
+        ixz="-4.6972378904298E-24"
+        iyy="3.8716370560674E-08"
+        iyz="-1.42614871377314E-28"
+        izz="3.8716370560674E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://piezobot_description/meshes/visual/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+ 
+
+    <!-- All-zero tool frame. This frame should correspond to the TOOL frame of the robot's controller.) -->
+    <!-- <link name="${prefix}tool0" /> -->
+    <!-- tool link -->
+
+<!-- START Delete if not needed -->
+    <!-- Standard frames for industrial robots. Also useful for manipulators.
+         (ROS-I specs - https://wiki.ros.org/Industrial/Tutorials/WorkingWithRosIndustrialRobotSupportPackages#Standardised_links_.2F_frames)-->
+    <!-- This frame should correspond to the BASE coordinate system of robot's controller.) -->
+    <!-- <link name="${prefix}base" /> -->
+    <!-- Frame for mounting EEF models to a manipulator. x+ axis points forward (REP 103). -->
+    <!-- <link name="${prefix}flange" /> -->
+<!-- END Delete if not needed  -->
+    <!-- END LINKS -->
+
+    <!-- JOINTS -->
+    <!-- base_joint fixes base_link to the environment -->
+    <joint name="${prefix}base_joint" type="fixed">
+      <xacro:insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${prefix}base_link"/>
+    </joint>
+    <!-- joint 1 -->
+   <joint
+    name="${prefix}joint1"
+    type="prismatic">
+    <origin
+      xyz="0.44895 0.2235 0.069"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.074"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+   <joint
+    name="${prefix}joint2"
+    type="prismatic">
+    <origin
+      xyz="0.03603 0.04605 0.0587"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0.074"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+
+  <joint
+    name="${prefix}joint3"
+    type="revolute">
+    <origin
+      xyz="0.057635 -0.0233 0.0013"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <joint
+    name="${prefix}joint4"
+    type="revolute">
+    <origin
+      xyz="0.1635 0 -0.0045623"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+   <joint
+    name="${prefix}joint5"
+    type="revolute">
+    <origin
+      xyz="0.026042 0 0"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+      <joint
+    name="${prefix}joint6"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.1"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+    <!-- tool frame - fixed frame -->
+    <!-- <joint name="${prefix}joint5-tool0" type="fixed">
+      <parent link="${prefix}link6" />
+      <child link="${prefix}tool0" />
+      <origin xyz="0 0 -0.115" rpy="0 ${-pi} ${-pi/2}" />
+    </joint> -->
+    <!-- END JOINTS -->
+
+<!-- START Delete if not needed -->
+    <!-- Standard frames for industrial robots. Also useful for manipulators.
+         (ROS-I specs - https://wiki.ros.org/Industrial/Tutorials/WorkingWithRosIndustrialRobotSupportPackages#Standardised_links_.2F_frames)-->
+    <!-- <joint name="${prefix}base_link-base_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${prefix}base_link" />
+      <child link="${prefix}base" />
+    </joint>
+
+    <joint name="${prefix}tool0-flange_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${prefix}tool0" />
+      <child link="${prefix}flange" />
+    </joint> -->
+<!-- END Delete if not needed  -->
+
+
+  </xacro:macro>
+</robot>

@@ -1,0 +1,39 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [24, 56, 40], 'median_image_size_in_voxels': [22.0, 56.0, 36.0], 'spacing': [2.419999837875366, 1.46875, 1.46875], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'UNet_class_name': 'PlainConvUNet', 'UNet_base_num_features': 32, 'n_conv_per_stage_encoder': [2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2], 'num_pool_per_axis': [2, 3, 3], 'pool_op_kernel_sizes': [[1, 1, 1], [2, 2, 2], [2, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'unet_max_num_features': 320, 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'batch_dice': False} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset001_NeedlePhantomV1', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [2.419999837875366, 1.46875, 1.46875], 'original_median_shape_after_transp': [22, 56, 36], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 1610.0, 'mean': 465.1097412109375, 'median': 478.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 1246.0, 'std': 241.4937744140625}}} 
+ 
+2023-10-27 08:47:49.355687: unpacking dataset... 
+2023-10-27 08:47:57.305135: unpacking done... 
+2023-10-27 08:47:57.305927: do_dummy_2d_data_aug: False 
+2023-10-27 08:47:57.306725: Using splits from existing split file: /workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/splits_final.json 
+2023-10-27 08:47:57.307184: The split file contains 5 splits. 
+2023-10-27 08:47:57.307379: Desired fold for training: 3 
+2023-10-27 08:47:57.307562: This split has 35 training and 9 validation cases. 
+2023-10-27 08:48:10.141215: Unable to plot network architecture: 
+2023-10-27 08:48:10.141754: 'torch._C.Node' object is not subscriptable 
+2023-10-27 08:48:10.287758: Training done. 
+2023-10-27 08:48:10.294414: Using splits from existing split file: /workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/splits_final.json 
+2023-10-27 08:48:10.294925: The split file contains 5 splits. 
+2023-10-27 08:48:10.295132: Desired fold for training: 3 
+2023-10-27 08:48:10.295326: This split has 35 training and 9 validation cases. 
+2023-10-27 08:48:10.295612: predicting t2_haste_tra_2_2mm_002 
+2023-10-27 08:48:12.931418: predicting t2_haste_tra_2_2mm_004 
+2023-10-27 08:48:13.619294: predicting t2_haste_tra_2_2mm_005 
+2023-10-27 08:48:17.434321: predicting t2_haste_tra_2_2mm_012 
+2023-10-27 08:48:19.031856: predicting t2_haste_tra_2_2mm_102 
+2023-10-27 08:48:19.062258: predicting t2_haste_tra_2_2mm_104 
+2023-10-27 08:48:19.122089: predicting t2_haste_tra_2_2mm_105 
+2023-10-27 08:48:19.147652: predicting t2_haste_tra_2_2mm_112 
+2023-10-27 08:48:19.171252: predicting t2_haste_tra_2_2mm_205 
+2023-10-27 08:48:24.063653: Validation complete 
+2023-10-27 08:48:24.063933: Mean Validation Dice:  0.7801996020006092 

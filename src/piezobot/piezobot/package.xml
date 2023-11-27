@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>piezobot</name>
+  <version>0.0.0</version>
+  <description>Metapackage</description>
+  <maintainer email="nilsmailiseke@gmail.com">Nils-Christian Iseek</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rqt_publisher</depend>
+  <depend>ros2controlcli</depend>
+
+  <depend>rqt_graph</depend>
+  <depend>rqt_topic</depend>
+  <depend>clang-format</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

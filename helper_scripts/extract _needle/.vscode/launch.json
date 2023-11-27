@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--path_to_image", "/home/nils/Documents/Masterarbeit/MRT_MESSUNG_16_10/MRI_16_10/TEST_ROBOTER_23_10_05-14_29_28-DST-1_3_12_2_1107_5_2_18_141978/SEQUENCE_REGION_SIEMENS_SEQUENCES_20231016_132459_652000/WithNeedle/t2_haste_tra_2_2_mitk/labelsTr/t2_haste_tra_2_2mm_0001_001.nii"],
+            "justMyCode": true
+        }
+    ]
+}

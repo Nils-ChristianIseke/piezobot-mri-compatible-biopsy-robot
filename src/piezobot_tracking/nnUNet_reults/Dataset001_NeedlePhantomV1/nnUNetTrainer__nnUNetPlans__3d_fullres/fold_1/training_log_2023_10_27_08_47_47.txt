@@ -1,0 +1,33 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+
+This is the configuration used by this training:
+Configuration name: 3d_fullres
+ {'data_identifier': 'nnUNetPlans_3d_fullres', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 2, 'patch_size': [24, 56, 40], 'median_image_size_in_voxels': [22.0, 56.0, 36.0], 'spacing': [2.419999837875366, 1.46875, 1.46875], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'UNet_class_name': 'PlainConvUNet', 'UNet_base_num_features': 32, 'n_conv_per_stage_encoder': [2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2], 'num_pool_per_axis': [2, 3, 3], 'pool_op_kernel_sizes': [[1, 1, 1], [2, 2, 2], [2, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]], 'unet_max_num_features': 320, 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'batch_dice': False} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset001_NeedlePhantomV1', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [2.419999837875366, 1.46875, 1.46875], 'original_median_shape_after_transp': [22, 56, 36], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 1610.0, 'mean': 465.1097412109375, 'median': 478.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 1246.0, 'std': 241.4937744140625}}} 
+ 
+2023-10-27 08:47:49.355575: unpacking dataset... 
+2023-10-27 08:47:56.895477: unpacking done... 
+2023-10-27 08:47:56.940800: do_dummy_2d_data_aug: False 
+2023-10-27 08:47:56.959500: Using splits from existing split file: /workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/splits_final.json 
+2023-10-27 08:47:56.980247: The split file contains 5 splits. 
+2023-10-27 08:47:56.980451: Desired fold for training: 1 
+2023-10-27 08:47:56.980629: This split has 35 training and 9 validation cases. 
+2023-10-27 08:48:10.140980: Unable to plot network architecture: 
+2023-10-27 08:48:10.141651: 'torch._C.Node' object is not subscriptable 
+2023-10-27 08:48:10.167346:  
+2023-10-27 08:48:10.167579: Epoch 950 
+2023-10-27 08:48:10.167848: Current learning rate: 0.00067 
+2023-10-27 08:48:24.941532: train_loss -0.9226 
+2023-10-27 08:48:24.942003: val_loss -0.8028 
+2023-10-27 08:48:24.942493: Pseudo dice [0.8682, 0.8986, 0.9646, 0.6484, 0.8952] 
+2023-10-27 08:48:24.943041: Epoch time: 14.76 s 
+2023-10-27 08:48:26.563351:  
+2023-10-27 08:48:26.563648: Epoch 951 
+2023-10-27 08:48:26.563916: Current learning rate: 0.00066 

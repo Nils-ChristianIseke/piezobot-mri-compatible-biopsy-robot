@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>piezobot_pose_correction</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="Nils.Iseke@medma.uni-heidelberg.de">nils</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>moveit_core</depend>
+  <depend>rclcpp</depend>
+  <depend>visualization_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>moveit_msgs</depend>
+  <depend>eigen</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>rqt</depend>
+  <depend>rqt_graph</depend>
+  <depend>tf2_tools</depend>
+  <depend>rqt_topic</depend>
+  <depend>moveit</depend>
+  <depend>tf2_ros</depend>
+  <depend>trac_ik_kinematics_plugin</depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <exec_depend>ros2launch</exec_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,50 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 44, 'patch_size': [56, 40], 'median_image_size_in_voxels': [56.0, 36.0], 'spacing': [1.46875, 1.46875], 'normalization_schemes': ['ZScoreNormalization'], 'use_mask_for_norm': [False], 'UNet_class_name': 'PlainConvUNet', 'UNet_base_num_features': 32, 'n_conv_per_stage_encoder': [2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2], 'num_pool_per_axis': [3, 3], 'pool_op_kernel_sizes': [[1, 1], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3]], 'unet_max_num_features': 512, 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'batch_dice': True} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset001_NeedlePhantomV1', 'plans_name': 'nnUNetPlans', 'original_median_spacing_after_transp': [2.419999837875366, 1.46875, 1.46875], 'original_median_shape_after_transp': [22, 56, 36], 'image_reader_writer': 'SimpleITKIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 1610.0, 'mean': 465.1097412109375, 'median': 478.0, 'min': 0.0, 'percentile_00_5': 0.0, 'percentile_99_5': 1246.0, 'std': 241.4937744140625}}} 
+ 
+2023-11-16 19:09:30.751139: unpacking dataset... 
+2023-11-16 19:09:38.865788: unpacking done... 
+2023-11-16 19:09:38.867117: do_dummy_2d_data_aug: False 
+2023-11-16 19:09:38.868081: Using splits from existing split file: /workspace/nnUNet_preprocessed/Dataset001_NeedlePhantomV1/splits_final.json 
+2023-11-16 19:09:38.868612: The split file contains 5 splits. 
+2023-11-16 19:09:38.868830: Desired fold for training: 3 
+2023-11-16 19:09:38.869037: This split has 35 training and 9 validation cases. 
+2023-11-16 19:09:47.894830: Unable to plot network architecture: 
+2023-11-16 19:09:47.895900: 'torch._C.Node' object is not subscriptable 
+2023-11-16 19:09:47.918444:  
+2023-11-16 19:09:47.918714: Epoch 0 
+2023-11-16 19:09:47.918972: Current learning rate: 0.01 
+2023-11-16 19:10:01.436810: train_loss 0.0855 
+2023-11-16 19:10:01.437325: val_loss -0.4057 
+2023-11-16 19:10:01.437707: Pseudo dice [0.33, 0.7256, 0.9475, 0.0, 0.7425] 
+2023-11-16 19:10:01.438044: Epoch time: 13.52 s 
+2023-11-16 19:10:01.438334: Yayy! New best EMA pseudo Dice: 0.5491 
+2023-11-16 19:10:02.373840:  
+2023-11-16 19:10:02.374234: Epoch 1 
+2023-11-16 19:10:02.374516: Current learning rate: 0.00999 
+2023-11-16 19:10:10.174807: train_loss -0.5299 
+2023-11-16 19:10:10.175333: val_loss -0.6476 
+2023-11-16 19:10:10.175657: Pseudo dice [0.8409, 0.8837, 0.9579, 0.0, 0.9166] 
+2023-11-16 19:10:10.175921: Epoch time: 7.8 s 
+2023-11-16 19:10:10.176147: Yayy! New best EMA pseudo Dice: 0.5662 
+2023-11-16 19:10:11.305980:  
+2023-11-16 19:10:11.306294: Epoch 2 
+2023-11-16 19:10:11.306583: Current learning rate: 0.00998 
+2023-11-16 19:10:18.734237: train_loss -0.6241 
+2023-11-16 19:10:18.734707: val_loss -0.6679 
+2023-11-16 19:10:18.735003: Pseudo dice [0.8587, 0.8962, 0.9617, 0.0, 0.9297] 
+2023-11-16 19:10:18.735248: Epoch time: 7.43 s 
+2023-11-16 19:10:18.735526: Yayy! New best EMA pseudo Dice: 0.5825 
+2023-11-16 19:10:19.896866:  
+2023-11-16 19:10:19.897196: Epoch 3 
+2023-11-16 19:10:19.897449: Current learning rate: 0.00997 
