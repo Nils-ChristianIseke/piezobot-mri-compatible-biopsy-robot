@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="piezobot">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import piezobot urdf file -->
+    <xacro:include filename="$(find piezobot_description)/urdf/piezobot.urdf.xacro" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="piezobot.ros2_control.xacro" />
+
+
+    <xacro:piezobot_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

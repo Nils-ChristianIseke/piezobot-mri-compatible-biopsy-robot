@@ -1,0 +1,15 @@
+{
+    "channel_names": {
+        "1": "T1"
+    },
+    "labels": {
+        "background": 0,
+        "Needle": 1,
+        "Tumor": 2,
+        "NeedleHolder": 5,
+        "Tissue": 3,
+        "Air": 4
+    },
+    "numTraining": 44,
+    "file_ending": ".nii.gz"
+}

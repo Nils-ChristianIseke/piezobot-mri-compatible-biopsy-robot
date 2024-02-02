@@ -1,0 +1,85 @@
+ros2 topic pub /forward_position_controller/commands std_msgs/msg/Float64MultiArray "
+layout:
+ dim: []
+ data_offset: 0
+data:
+ - 0.0
+ - 0.0
+ - 0
+ - 0
+ - 0
+ - 1"
+
+ros2 param set /move_group_private_ use_sim_time True
+ros2 param set /joint_state_broadcaster use_sim_time True
+
+
+ros2 topic pub  --once mri_image_path std_msgs/msg/String "{data: /workspaces/piezobot_pc_workspace/src/piezobot_tracking/nnUnet_input}"
+
+ros2 run tf2_ros tf2_echo needle_holder mri
+
+ros2 topic pub /segmentation_result std_msgs/msg/String "{data: /workspaces/piezobot_pc_workspace/src/piezobot_tracking/nnUnet_output/output.nii.gz}"
+ros2 topic pub /displacement_controller/reference  control_msgs/msg/JointJog "header:
+  stamp:
+    sec: 0
+    nanosec: 0
+  frame_id: ''
+joint_names: ['joint1', 'joint2', 'joint3', 'joint4', 'joint5', 'joint6']
+displacements: [0.1, 0.2,0.1,0.1,0.1,0.1]
+velocities: []
+duration: 0.0"
+
+ros2 topic pub  pose_from_segmentation geometry_msgs/msg/PoseStamped "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'base_link'},pose:{position: {x: .37, y: 0.145, z: .0}, orientation: {x: -0.7, y: 0.7, z: 0.0, w: -.0}}}"
+
+
+
+
+
+ros2 service call /servo_node/start_servo std_srvs/srv/Trigger {}
+
+
+
+
+
+
+
+ros2 service call /servo_node/switch_command_type moveit_msgs/srv/ServoCommandType "{command_type: 2}"
+ros2 launch piezobot_servo piezobot_servo.launch.py
+
+
+ros2 run piezobot_tracking piezobot_pose_correction
+ros2 topic pub /segmentation_result std_msgs/msg/String "{data: /workspaces/piezobot_pc_workspace/src/piezobot_tracking/nnUnet_output/output.nii.gz}"
+ros2 run piezobot_tracking pose_from_segmentation.py
+
+ros2 run tf2_tools view_frames ros2 service call /servo_node/switch_command_type moveit_msgs/srv/ServoCommandType "{command_type: 2}"
+ros2 service call /servo_node/switch_command_type moveit_msgs/srv/ServoCommandType "{command_type: 2}"
+ros2 service call /servo_node/switch_command_type moveit_msgs/srv/ServoCommandType "{command_type: 2}"
+
+1. Test if X0E; is working
+2. implement /forward_position_controller
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ros2 launch piezobot_servo piezobot_servo.launch.py
+
+ros2 service call /servo_node/switch_command_type moveit_msgs/srv/ServoCommandType "{command_type: 1}"
+
+ros2 run tf2_tools view_frames
+
+
+ros2 launch piezobot_servo piezobot_servo.launch.py
+ros2 run piezobot 

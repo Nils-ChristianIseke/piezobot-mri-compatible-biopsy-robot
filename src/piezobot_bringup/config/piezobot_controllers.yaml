@@ -1,0 +1,59 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1 # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+    displacement_controller:
+      type: displacement_controller/DisplacementController
+
+    joint_group_position_controller:
+      type: position_controllers/JointGroupPositionController
+
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+    interface_name: position
+    command_interfaces:
+      - position
+
+displacement_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+    interface_name: position
+
+    command_interfaces:
+      - position
+
+joint_group_position_controller:
+  ros__parameters:
+    type: position_controllers/JointGroupPositionController
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+    interface_name: position
+
+velocity_controller:
+  ros__parameters:
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController

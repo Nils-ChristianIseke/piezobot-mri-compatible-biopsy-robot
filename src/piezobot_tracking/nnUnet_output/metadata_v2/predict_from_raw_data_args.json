@@ -1,0 +1,11 @@
+{
+    "folder_with_segs_from_prev_stage": null,
+    "list_of_lists_or_source_folder": "/workspaces/piezobot_pc_workspace/src/piezobot_tracking/nnUnet_input",
+    "num_parts": 1,
+    "num_processes_preprocessing": 2,
+    "num_processes_segmentation_export": 2,
+    "output_folder_or_list_of_truncated_output_files": "/workspaces/piezobot_pc_workspace/src/piezobot_tracking/nnUnet_output/output.nii.gz",
+    "overwrite": true,
+    "part_id": 0,
+    "save_probabilities": false
+}

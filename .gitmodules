@@ -1,0 +1,12 @@
+[submodule "nnUNet"]
+	path = nnUNet
+	url = git@github.com:MIC-DKFZ/nnUNet.git
+[submodule "src/moveit2"]
+	path = src/moveit2
+	url = git@github.com:ros-planning/moveit2.git
+[submodule "src/moveit_resources"]
+	path = src/moveit_resources
+	url = https://github.com/ros-planning/moveit_resources.git
+[submodule "src/moveit_msgs"]
+	path = src/moveit_msgs
+	url = https://github.com/ros-planning/moveit_msgs.git

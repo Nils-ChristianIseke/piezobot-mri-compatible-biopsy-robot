@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "lib/**",
+                "/opt/ros/humble/**",
+                "${workspaceFolder}/src/**",
+                "/usr/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "compileCommands": "./build/compile_commands.json",
+            "cStandard": "c99",
+            "cppStandard": "c++21",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

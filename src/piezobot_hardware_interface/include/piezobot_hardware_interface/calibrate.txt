@@ -1,0 +1,29 @@
+Move to zero
+
+X1J-10000
+X1E0
+X2J-10000
+X2E0
+X1
+
+
+X1Y11,3550000 #set counts per step
+X2Y11,3550000
+
+X2Y6,1          #reverse encoder direction
+
+X1Y3,0; #lowerlimit
+X1Y4,3400; # upper limit
+X1Y10,10   #   - set target deceleration ramp to 10 (to avoid overshooting)
+X1Y12,3   #   - set target mode model to 3 (to avoid overshooting)
+X1Y5,2  #   - set target mode stop range (i.e. precision) to 2
+
+
+
+X3Y10,10
+X3Y12,3
+X3Y5,2
+
+X4Y10,10
+X4Y12,3
+X4Y5,2
