@@ -1,6 +1,0 @@
-install miniconds
-mamba create -n cling
-source activate cling
-mamba install xeus-cling jupyterlab -c conda-forge
-
-jupyter-lab

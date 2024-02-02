@@ -15,7 +15,7 @@ from tf2_ros.transform_broadcaster import TransformBroadcaster
 from tf2_ros import TransformStamped
 from std_msgs.msg import Float64MultiArray
 
-
+# Not done yet
 class JointSpaceCorrection(Node):
     def __init__(self):
         super().__init__("PoseCorrection")
