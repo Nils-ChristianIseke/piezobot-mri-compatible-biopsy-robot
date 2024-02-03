@@ -136,7 +136,7 @@ to the topic mri_image_path:
 'ros2 topic pub  --once std_msgs/msg/String "{data: path_to_mri_image}"
 This starts the Visual Servoing process, and which end the pose correction of the robot is done.
 
-Some parts can be found in this [repo](https://github.com/Nils-ChristianIseke/piezobot_mri)
+## The following parts can be found in this [repo](https://github.com/Nils-ChristianIseke/piezobot_mri)
 
 ## High Performance Cluster
 The trained model can be found in high_performance_cluster/hd_oy280-nnUNetv2/nnUNet_results/Dataset001_NeedlePhantomV1/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_0/checkpoint_final.pth,
