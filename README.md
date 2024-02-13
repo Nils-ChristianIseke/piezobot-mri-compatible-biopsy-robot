@@ -3,12 +3,14 @@
 This repo contains all necessary ros2 packages in the src directory.
 Furthermore it contains, the mri images int the directory mri_images.
 And the setup used to train nnUnet on the HPC in the directory high_performance_cluster
+![Piezobot - MRI compatible biopsy robot, based on piezoelectric actuators and ceramic bearings](https://github.com/Nils-ChristianIseke/piezobot-mri-compatible-biopsy-robot/assets/48475933/b23f74b0-789e-43f5-a3e9-70337cada2ed)
+![3D Segmentation of an MRI from a needle phantom. Needleholder (blue), Needle (red), Tumor (yellow), Tissue (green)](https://github.com/Nils-ChristianIseke/piezobot-mri-compatible-biopsy-robot/assets/48475933/8ee418ea-ec4c-461f-a7a7-38c800fa6aad)
+
 
 
 ## MRI Based Visual Servoing 
 This ros2 workspace enabled look-and-move visual servoing for the piezobot, an mri compatible biopsy
 robot.
-
 
 ### Get Started
 Following Prerequisites must be met:
