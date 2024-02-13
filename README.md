@@ -1,9 +1,4 @@
-
-# Structure of the Repository
-This repo contains all necessary ros2 packages in the src directory.
-Furthermore it contains, the mri images int the directory mri_images.
-And the setup used to train nnUnet on the HPC in the directory high_performance_cluster
-
+# Piezobot - MRI Compatible Biopsy Robot
 
 <p align="center">
 <img src="https://github.com/Nils-ChristianIseke/piezobot-mri-compatible-biopsy-robot/assets/48475933/b23f74b0-789e-43f5-a3e9-70337cada2ed" width="500">
@@ -13,6 +8,16 @@ And the setup used to train nnUnet on the HPC in the directory high_performance_
 <p align="center">
 <img src="https://github.com/Nils-ChristianIseke/piezobot-mri-compatible-biopsy-robot/assets/48475933/8ee418ea-ec4c-461f-a7a7-38c800fa6aad" width="500">
 </p>
+
+
+
+
+# Structure of the Repository
+This repo contains all necessary ros2 packages in the src directory.
+Furthermore it contains, the mri images int the directory mri_images.
+And the setup used to train nnUnet on the HPC in the directory high_performance_cluster
+
+
 
 
 3D Segmentation of an MRI from a needle phantom. The pose extraced from this segmentation is used to do look-and-move Visual Servoing of the needle. Needleholder (blue), Needle (red), Tumor (yellow), Tissue (green).
