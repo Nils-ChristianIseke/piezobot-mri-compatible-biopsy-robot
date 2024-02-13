@@ -9,6 +9,9 @@
 <img src="https://github.com/Nils-ChristianIseke/piezobot-mri-compatible-biopsy-robot/assets/48475933/8ee418ea-ec4c-461f-a7a7-38c800fa6aad" width="500">
 </p>
 
+3D Segmentation of an MRI from a needle phantom. The pose extraced from this segmentation is used to do look-and-move Visual Servoing of the needle. Needleholder (blue), Needle (red), Tumor (yellow), Tissue (green).
+
+
 
 
 
@@ -18,9 +21,6 @@ Furthermore it contains, the mri images int the directory mri_images.
 And the setup used to train nnUnet on the HPC in the directory high_performance_cluster
 
 
-
-
-3D Segmentation of an MRI from a needle phantom. The pose extraced from this segmentation is used to do look-and-move Visual Servoing of the needle. Needleholder (blue), Needle (red), Tumor (yellow), Tissue (green).
 
 
 ## MRI Based Visual Servoing 
